@@ -30,8 +30,6 @@ const SavedBooks = () => {
     }
   };
 
-
-
   return (
     <>
       <Jumbotron fluid className='text-light bg-dark'>
