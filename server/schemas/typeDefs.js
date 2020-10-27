@@ -1,8 +1,11 @@
-//Written by MG
-
 // import the gql tagged template function
 const { gql } = require('apollo-server-express');
 
+// create our typeDefs
+// define a query = type Query {}
+// Reaction type nested in Thought
+//! = data must exist
+// mutation - will return a user object, either user who logged in or signed up
 const typeDefs = gql`
 type User {
   _id: ID
@@ -47,4 +50,5 @@ input BookInput {
 }
 `;
 
+// export the typeDefs
 module.exports = typeDefs;

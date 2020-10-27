@@ -1,7 +1,8 @@
-// use this to decode a token and get the user's information out of it
+
+// use this to decode a token 
 import decode from 'jwt-decode';
 
-// create a new class to instantiate for a user
+
 class AuthService {
   // get user data
   getProfile() {
@@ -15,7 +16,7 @@ class AuthService {
     return !!token && !this.isTokenExpired(token); // handwaiving here
   }
 
-  // check if token is expired
+ 
   isTokenExpired(token) {
     try {
       const decoded = decode(token);

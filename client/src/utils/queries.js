@@ -1,6 +1,5 @@
-//Written by MG
-
-// storing GraphQL query 
+// written by MG
+//Storing 
 
 import gql from 'graphql-tag';
 export const GET_ME = gql`
